@@ -81,16 +81,17 @@ body::after {
 
 .header {
   display: flex; 
+  flex-direction: column;
   align-items: center; 
   justify-content: center; 
   padding: 24px 0; 
   position: relative; 
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
-.header h1, .header h2 {
-  font-size: 4rem;
+.header h1 {
+  font-size: 5rem;
   font-weight: 900;
   margin: 0;
   color: var(--fg);
@@ -99,6 +100,18 @@ body::after {
     4px 4px 0px rgba(75, 172, 254, 0.3),
     2px 2px 0px rgba(0, 0, 0, 0.1);
   letter-spacing: 3px;
+  position: relative;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: -10px 0 0 0;
+  color: var(--crayon-blue);
+  text-align: center;
+  text-shadow:
+    2px 2px 0px rgba(75, 172, 254, 0.2);
+  letter-spacing: 2px;
   position: relative;
 }
 
@@ -185,6 +198,22 @@ body::after {
   flex-wrap: wrap; 
   justify-content: center; 
   align-items: center; 
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin: 40px 0;
+  padding: 20px;
+}
+
+.button-container .btn {
+  min-width: 200px;
+  padding: 18px 24px;
+  font-size: 18px;
+  font-weight: 900;
 }
 
 .grid { 
@@ -455,10 +484,17 @@ a:hover {
     padding: 24px; 
     margin: 8px; 
   }
-  .header h1, .header h2 { 
-    font-size: 2rem; 
+  .header h1 { 
+    font-size: 3rem; 
+  }
+  .header h2 { 
+    font-size: 1.8rem; 
   }
   .input, .btn { 
     min-width: 160px; 
+  }
+  .button-container .btn {
+    min-width: 180px;
+    font-size: 16px;
   }
 }
