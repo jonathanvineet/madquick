@@ -1,5 +1,7 @@
 ## MadQuick — Password Generator + Secure Vault (MVP)
 
+Your secrets, encrypted and quick.
+
 A minimal, fast, privacy-first password manager MVP built with:
 
 - Next.js (App Router) + TypeScript
